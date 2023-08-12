@@ -1,0 +1,80 @@
+@import url(https://fonts.googleapis.com/css?family=Merriweather:300,300italic,regular,italic,700,700italic,900,900italic);
+@import url(https://fonts.googleapis.com/css?family=Rubik:300,regular,500,600,700,800,900,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+
+/*Обнулення стилів*/
+
+* {
+	 margin: 0;
+	 padding: 0;
+	 box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+	 box-sizing: border-box;
+}
+html,
+body{
+	height: 100%;
+	min-width: 20rem;
+}
+
+a {
+	 text-decoration: none;
+	 color: inherit;
+}
+
+ul li {
+	 list-style: none;
+}
+
+img {
+	vertical-align: top;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+font-weight: inherit;
+font-style: inherit;
+}
+
+/*Загальні стилі =================================================================================================================*/
+
+body {
+	 font-family: 'Rubik';
+	 font-size: 0.875rem;
+	 color: #646d70;
+}
+
+.wrapper {
+	 min-height: 100%;
+	 overflow: clip;
+	 display: flex;
+	 flex-direction: column;
+
+}
+.page {
+	 flex: 1 1 auto;
+}
+
+/*налаштування адаптиву*/
+
+[class*="__container"] {
+	max-width: 52rem; 
+	padding-left: 0.9375rem;
+	padding-right: 0.9375rem;
+	margin: 0 auto;
+}
+
+/*модулі*/
+
+.title {
+	 font-family: 'Merriweather';
+	 font-size: 1.875rem;
+	 color: #fff;
+	 font-size: 1.875rem;
+}
+
+.title--dark {
+	 color: #222f33;
+}
