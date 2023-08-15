@@ -276,8 +276,10 @@ body {
    position: relative;
    z-index: 2;
 }
-
 .materials__container {
+   position: relative;
+   padding-bottom: 1.25rem;
+   z-index: 2;
    display: grid;
    grid-template-columns: 50% minmax(17.5rem, 20.3125rem);
    justify-content: space-between;
@@ -285,18 +287,15 @@ body {
    gap: 1.25rem;
    min-width: 0;
 }
-
 .materials__slider {
 transform: translate(0, -20.765027%); /* 76/366 */
 }
-
 .slider-materials__slide {
    position: relative;
    /* aspect-ratio: 88.797814%; */
    width: 20.3125rem;
    height: 22.875rem;
 }
-
 .slider-materials__slide img {
    position: absolute;
    width: 100%;
@@ -305,7 +304,6 @@ transform: translate(0, -20.765027%); /* 76/366 */
    left: 0;
    object-fit: cover;
 }
-
 .slider-materials__pagination{
    display: flex;
    align-items: center;
@@ -318,7 +316,6 @@ transform: translate(0, -20.765027%); /* 76/366 */
    left: 0;
    width: 100%;
 }
-
 .slider-materials__pagination .swiper-pagination-bullet {
    flex: 0 0 0.5rem;
    width: 0.5rem;
@@ -333,7 +330,6 @@ transform: translate(0, -20.765027%); /* 76/366 */
 .slider-materials__pagination .swiper-pagination-bullet-active {
 opacity: 1;
 }
-
 .materials__content{
    padding-top: 1.5625rem;
    display: grid;
@@ -349,20 +345,50 @@ opacity: 1;
    padding: 0.625rem 0.875rem;
    border: 1px solid #646d70;
 }
-
 .swiper {
    overflow: hidden;
 }
-
 .swiper-initialized {
    touch-action: pan-y;
 }
-
 .swiper-wrapper {
    display: flex;
    box-sizing: content-box;
 }
-
 .swiper-slide {
    flex-shrink: 0;
 }
+@media (min-width: 47.9375rem) {
+.materials::before{
+   content: '';
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 61.7%;
+   height: 2.3125rem;
+   background-color: #fff;
+   transform: translate(0, -100%);
+}
+.materials::after{
+   content: '';
+   position: absolute;
+   bottom: 0;
+   right: 0;
+   width: 38.3%;
+   height: 8.75rem;
+   background-color: #222f33;
+}
+}
+@media (max-width: 47.9375rem) {
+   .materials__container {
+      grid-template-columns: auto;
+      justify-content: center;
+   }
+   .materials__slider {
+      transform: translate(0, 0);
+      }
+   .materials__content {
+      justify-items: center;
+   }
+}
+   
