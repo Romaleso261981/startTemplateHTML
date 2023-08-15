@@ -492,6 +492,7 @@ body {
 }
 .footer__container {
    display: grid;
+   column-gap: 0.9375rem;
    color: #fff;
    align-items: center;
    grid-template-columns: repeat(3, 1fr);
@@ -522,4 +523,11 @@ body {
 }
 .menu-footer__link:hover {
    text-decoration: underline;
+}
+@media (max-width: 37.5em) {
+   .footer__container {
+      grid-template-columns: auto;
+      justify-content: center;
+      text-align: center;
+   }
 }
