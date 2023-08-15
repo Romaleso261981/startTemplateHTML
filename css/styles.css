@@ -98,6 +98,9 @@ body {
 .text {
    line-height: 185%;
 }
+.text p:not(:last-child) {
+   margin-bottom: 0.9375rem;
+}
 .page {
    flex: 1 1 auto;
 }
