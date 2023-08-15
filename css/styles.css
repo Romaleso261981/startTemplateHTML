@@ -91,11 +91,11 @@ body {
    color: #222f33;
 }
 @media (max-width: 47.9988em) {
-  .title{
-   font-size: 1.5rem;
-  }
+   .title {
+      font-size: 1.5rem;
+   }
 }
-.text{
+.text {
    line-height: 185%;
 }
 .page {
@@ -274,7 +274,7 @@ body {
 
 /*section materials*/
 
-.materials{
+.materials {
    position: relative;
    z-index: 2;
 }
@@ -290,7 +290,7 @@ body {
    min-width: 0;
 }
 .materials__slider {
-transform: translate(0, -20.765027%); /* 76/366 */
+   transform: translate(0, -20.765027%); /* 76/366 */
 }
 .slider-materials__slide {
    position: relative;
@@ -306,11 +306,11 @@ transform: translate(0, -20.765027%); /* 76/366 */
    left: 0;
    object-fit: cover;
 }
-.slider-materials__pagination{
+.slider-materials__pagination {
    display: flex;
    align-items: center;
    justify-content: center;
-   padding:0 0.3125rem 1rem .3125rem;
+   padding: 0 0.3125rem 1rem 0.3125rem;
    flex-wrap: wrap;
    gap: 0.5rem;
    position: absolute;
@@ -330,17 +330,17 @@ transform: translate(0, -20.765027%); /* 76/366 */
    transition: opacity 0.3s ease-in-out;
 }
 .slider-materials__pagination .swiper-pagination-bullet-active {
-opacity: 1;
+   opacity: 1;
 }
-.materials__content{
+.materials__content {
    padding-top: 1.5625rem;
    display: grid;
    justify-items: start;
    gap: 0.8125rem;
 }
-.materials__text{
+.materials__text {
 }
-.materials__more{
+.materials__more {
    font-size: 0.75rem;
    font-weight: 500;
    border-radius: 0.25rem;
@@ -360,37 +360,59 @@ opacity: 1;
 .swiper-slide {
    flex-shrink: 0;
 }
-@media (min-width: 47.9375rem) {
-.materials::before{
-   content: '';
-   position: absolute;
-   top: 0;
-   left: 0;
-   width: 61.7%;
-   height: 2.3125rem;
-   background-color: #fff;
-   transform: translate(0, -100%);
+@media (min-width: 47.9988rem) {
+   .materials::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 61.7%;
+      height: 2.3125rem;
+      background-color: #fff;
+      transform: translate(0, -100%);
+   }
+   .materials::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      width: 38.3%;
+      height: 8.75rem;
+      background-color: #222f33;
+   }
 }
-.materials::after{
-   content: '';
-   position: absolute;
-   bottom: 0;
-   right: 0;
-   width: 38.3%;
-   height: 8.75rem;
-   background-color: #222f33;
-}
-}
-@media (max-width: 47.9375rem) {
+@media (max-width: 47.9988rem) {
    .materials__container {
       grid-template-columns: auto;
       justify-content: center;
    }
    .materials__slider {
       transform: translate(0, 0);
-      }
+   }
    .materials__content {
       justify-items: center;
    }
 }
-   
+
+/*секція інновації*/
+
+.innovatie {
+   background-color: #222f33;
+   padding: 4.375rem 0rem 5rem 0rem;
+}
+.innovatie__container {
+}
+.innovatie__title {
+}
+.innovatie__title:not(:last-child) {
+   margin-bottom: 0.5rem;
+}
+.innovatie__text {
+   columns: 2 15.625rem;
+   gap: 2.6875rem;
+}
+@media (max-width: 47.9988rem) {
+   .innovatie {
+      padding: 1.875rem 0rem 1.875rem 0rem;
+   }
+}
