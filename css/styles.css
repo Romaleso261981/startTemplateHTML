@@ -486,6 +486,9 @@ body {
 /*секція footer*/
 
 .footer {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
    background-color: #222f33;
    padding-top: 2.0625rem;
    padding-bottom: 2.0625rem;
@@ -501,6 +504,7 @@ body {
 .footer__mail {
    font-style: 0.75rem;
    font-weight: 500;
+   justify-self: end;
 }
 .footer__mail:hover {
    text-decoration: underline;
@@ -509,9 +513,9 @@ body {
    justify-self: center;
 }
 .footer__menu {
+   justify-self: start;
 }
 .menu-footer {
-   justify-self: end;
    display: flex;
    gap: 1.875rem;
    align-items: center;
@@ -529,6 +533,11 @@ body {
    .footer__container {
       grid-template-columns: auto;
       justify-content: center;
-      text-align: center;
+   }
+   .footer__menu {
+      justify-self: center;
+   }
+   .footer__mail {
+      justify-self: center;
    }
 }
